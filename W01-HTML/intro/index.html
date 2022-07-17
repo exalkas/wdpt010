@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            font-size: 16px;
+            font-family: sans-serif;
+        }
+
+        header {
+            background: #333;
+            padding: 20px;
+            color: #fff;
+            display: flex;
+            /* center the header */
+            justify-content: center; 
+            align-items: center;
+            height: 100px;
+            /* flex-direction: column; */
+        }
+
+        main {
+            background: pink;
+            /* min-height: 1000px; */
+            display: flex;
+            justify-content: space-between;
+        }
+
+        footer {
+            position: fixed;
+            background: lime;
+            width: 100%;
+            bottom: 0;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .menu, .rightcolumn {
+            background-color: lightblue;
+            height: 200px;
+            width: 200px;
+        }
+
+        li {
+            height: 40px;
+            width: 150px;
+            border: 1px solid black;
+            margin: 5px;
+        }
+
+        @media  screen and (min-width : 300px) {
+
+            .menu {
+                width: 100%;
+            }
+
+            li {
+                width: 100%;
+            }
+            main {
+                flex-direction: column;
+                background: lime;
+                justify-content: flex-start;
+            }
+
+            .rightcolumn {
+                margin-top: 20px;
+                width: 100%;
+            }
+        }
+
+        @media  screen and (min-width : 800px) {
+            main {
+                flex-direction: column;
+                background: red;
+                justify-content: flex-start;
+            }
+
+            .rightcolumn {
+                margin-top: 20px;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- <div class="container" id="html" style="color: red;  background: black; padding: 5px;">
+        this is red color text
+    </div>
+    <p style="font-size: 2rem !important; background: pink;">hello world
+        <span style="font-size: 2em">this is a span text</span>
+    </p>
+    <span style="background: lime">another span in new line</span> -->
+    <header>
+        <p style="display: block">This is a header</p>
+        <!-- <p style="display: block">This is a subtitle</p> -->
+    </header>
+    <main>
+        <div class="menu">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="rightcolumn">this is right column</div>
+    </main>
+    <footer>here is our footer</footer>
+</body>
+</html>
