@@ -152,3 +152,7 @@ const totalPrices = products.reduce((acc, item) => {
 }, 0)
 console.log("🚀 totalPrices", totalPrices/products.length)
 
+// 
+
+
+
