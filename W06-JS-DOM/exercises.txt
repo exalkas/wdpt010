@@ -1,0 +1,47 @@
+Exercise - The Cart
+========
+
+Create a page with a header.
+The header should contain a cart icon. The cart icon should include the number of products that 
+are currently in it.
+
+Create the following functionalities:
+
+1) If the cart is empty then it should display the number "0".
+This number should be in a round container.
+
+2) Below the header, add a product card with "+" and "-" buttons at the sides of an input element.
+When the user clicks on the "+" button, then the number at the cart icon in the header along with the number inside the input element should increase accordingly.
+
+3) Similarly, when the user clicks the "-" button, then the number at the cart icon in the header along with the number inside the input element should decrease accordingly.
+
+N.B. You should not allow negative numbers in both the cart and the input
+
+
+Exercise DOM
+========
+
+Create using JS an unordered list with 4 items.
+The items should contain the follolwing texts:
+1. "What is your favorite song?"
+2. "What is your favorite drink?"
+3. "What is your favorite food?"
+4. "What is your favorite hobby?"
+ 
+When each one of them is clicked, a textbox should appear and prompt the user to enter his/her choice.
+
+The program has the following favorites predefined for each corrensponding list item:
+1) "Birdie song"
+2) "Soda"
+3) "Pasta"
+4) "Scuba"
+
+if user's answer is the same with the program's predefined favorite for the same list item, 
+then the program should display an alert or anything else to congratulate the user.
+
+If user's answer is different from the predefined program favorite, then the program should display the message:
+"It seems that we have different taste but we still can be friends!"
+
+In any of these two last senarios, the program should display button/link which when clicked the user should be able to start over.
+
+N.B. The program should be able to recognize user's input regardless of letter casing.
