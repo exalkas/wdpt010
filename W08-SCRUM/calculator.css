@@ -1,0 +1,108 @@
+body {
+    background: #007893;
+  }
+  
+  #calculator {
+    width: 290px;
+    height: auto;
+    margin: auto;
+    padding: 20px 20px 9px;
+    border-radius: 3px;
+    background: #acafb1;
+    box-shadow: 0px 4px #888888, 0px 10px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .top span.clear {
+    float: left;
+  }
+  
+  .top .screen {
+    margin-right: 4px;
+    height: 40px;
+    width: 187px;
+    float: right;
+    padding: 0 13px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    box-shadow: inset 0px 4px rgba(0, 0, 0, 0.2);
+    font-size: 17px;
+    line-height: 40px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    text-align: right;
+    letter-spacing: 1px;
+  }
+  
+  .keys,
+  .top {
+    overflow: hidden;
+  }
+  
+  .keys span,
+  .top span.clear {
+    float: left;
+    position: relative;
+    top: 0;
+    cursor: pointer;
+    width: 66px;
+    height: 36px;
+    background: white;
+    border-radius: 3px;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    margin: 0 7px 11px 0;
+    color: #888;
+    line-height: 36px;
+    text-align: center;
+    user-select: none;
+    transition: all 0.2s ease;
+  }
+  
+  .keys span.operator {
+    background: #fff0f5;
+    margin-right: 0;
+  }
+  
+  .keys span.eval {
+    background: #5357da;
+    color: white;
+  }
+  
+  .top span.clear {
+    background: #ff9fa8;
+    box-shadow: 0px 4px #ff7c87;
+    color: white;
+  }
+  
+  .keys span:hover {
+    background: #09d3ac;
+    box-shadow: 0px 4px #059075;
+    color: white;
+  }
+  
+  .keys span.eval:hover {
+    background: #5357da;
+    box-shadow: 0px 4px #2a2ed0;
+    color: #ffffff;
+  }
+  
+  .top span.clear:hover {
+    background: #ff9fa8;
+    box-shadow: 0px 4px #d3545d;
+    color: white;
+  }
+  
+  .keys span:active {
+    box-shadow: 0px 0px #6b54d3;
+    top: 4px;
+  }
+  
+  .keys span.eval:active {
+    box-shadow: 0px 0px #717a33;
+    top: 4px;
+  }
+  
+  .top span.clear:active {
+    top: 4px;
+    box-shadow: 0px 0px #d3545d;
+  }
+  
