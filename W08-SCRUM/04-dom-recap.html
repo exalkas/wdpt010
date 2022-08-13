@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *, *::after, *::before {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            font-size: 2rem;
+            font-family: sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <script>
+        // console.log(document, typeof document)
+
+        const body = document.querySelector('body')
+
+        const main = document.createElement('main')
+
+        document.body.appendChild(main)
+
+        const h1 = document.createElement('h1')
+
+        h1.textContent = 'DOM Recap'
+
+        main.appendChild(h1)
+
+        h1.style.color = 'red'
+
+        // h1.onmouseover = function() {
+        //     h1.style.color = 'orange'
+        // }
+        h1.addEventListener('mouseover', () => h1.style.color = 'blue')
+        h1.addEventListener('mouseout', () => h1.style.color = 'red')
+
+        for (let i = 0; i < 5; i++) {
+
+            const input = document.createElement('input')
+            input.id = i
+            main.appendChild(input)
+        
+        }
+
+        const inputs = document.querySelectorAll('input')
+
+        console.log(inputs)
+        inputs[3].focus()
+
+    </script>
+</body>
+</html>
