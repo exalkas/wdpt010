@@ -140,6 +140,8 @@ students.forEach(item => {
     }
 console.log("🚀 ~ file: 03-hof-recap.js ~ line 141 ~ students", students)
 })
+// Students has not been mutated!!!
+console.log("🚀 ~ file: 03-hof-recap.js ~ line 143 ~ students", students)
 
 /**
  * Reduce
