@@ -1,5 +1,7 @@
 import { useState } from "react"
 import Card from './components/Card'
+import {BsCartFill} from 'react-icons/bs'
+import Iphone from './images/iphone.jpg'
 
 const students = [
     {name: 'john', age: 20, address: {
@@ -63,11 +65,13 @@ export default function Students() {
     const handleDelete = () => {console.log('delete pressed')}
 
     return <div>
+        <header><BsCartFill className="icon" onClick={() => alert("Yahoo")}/></header>
         <ul>
             {
                 // studentsArray.map((item, idx) => <li key={idx}>Name: {item.name} Age: {item.age} City: {item.address.city}</li>)
                 studentsArray.map((item, idx) => <Card key={idx }student={item} handleDelete={handleDelete}/>
             )}
         </ul>
+        <img src='https://cdn.pixabay.com/photo/2022/08/17/08/58/sun-has-7391959_960_720.jpg' alt=""/>
     </div>
 }

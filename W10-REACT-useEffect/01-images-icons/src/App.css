@@ -1,0 +1,32 @@
+.main {
+
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  margin: 10px;
+}
+
+.red {
+  color: red
+}
+
+.green {
+
+  color: green
+}
+
+.modal {
+  display: fixed;
+  top: 100px;
+  left: 100px;
+  width: 200px;
+  height: 200px;
+  background: pink;
+}
