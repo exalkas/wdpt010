@@ -1,0 +1,20 @@
+$primary-color: lime; 
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+
+    p {
+        font-size: 3rem;
+        color: $primary-color;
+
+        &:hover {
+            color:yellow;
+        }
+    }
+
+    
+}
