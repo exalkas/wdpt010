@@ -6,6 +6,10 @@ function AxiosDemo() {
 
     const [recipe, setRecipe] = useState({})
 
+    const [showModal, setShowModal] = useState(false)
+
+  
+
   useEffect(() => {
 
     function handleData(response) {
@@ -45,8 +49,14 @@ function AxiosDemo() {
   return ( 
 
   <div className="main">
+    {
+      showModal === true ? 
+      <div> hello </div>
+      :
+      <div> good bye </div>
+    }
     {recipe.strMeal}
-
+    <button onClick={() => setShowModal(!showModal)}>Change state for showModal</button>
     <img src={recipe.strMealThumb} alt=''/>
   </div>
   );
