@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *, *::after, *::before {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            font-size: 2rem;
+            font-family: sans-serif;
+        }
+
+        div {
+            border: 1px solid;
+        }
+
+        .div1 {
+            background: red;
+            width: 400px;
+            height: 400px;
+        }
+        .div2 {
+            background: lime;
+            width: 300px;
+            height: 300px;
+        }
+        .div3 {
+            background: blue;
+            width: 200px;
+            height: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="div1">
+        <div class="div2">
+            <div class="div3">
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const div1 = document.querySelector('.div1')
+        const div2 = document.querySelector('.div2')
+        const div3 = document.querySelector('.div3')
+
+        div1.addEventListener('click', () => console.log('DIV 1 CLICKED!'), true)
+        div2.addEventListener('click', () => console.log('DIV 2 CLICKED!'), true)
+        div3.addEventListener('click', () => console.log('DIV 3 CLICKED!'), true)
+    </script>
+</body>
+</html>
