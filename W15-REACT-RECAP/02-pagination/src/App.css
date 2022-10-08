@@ -1,0 +1,129 @@
+.main {
+
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+}
+
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+/* .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px
+}
+
+.icon {
+  color: red;
+  font-size: 2rem;
+}
+
+.searchbox {
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart {
+  position: relative;
+}
+
+.cart span {
+  position: absolute;
+  top: 5px;
+  left: 15px; 
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 350px;
+  width: 200px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.card img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 100%;
+  height: 450px;
+  gap: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: scroll;
+  max-width: 100%;
+  padding: 10px;
+  gap: 20px;
+  
+}
+
+.fileWrapper {
+  padding: 10px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.file {
+  cursor: pointer;
+  border: 1px solid red;
+  padding: 10px;
+  margin: 10px;
+  transition: background 1s, color 0.5s;
+}
+
+.file:hover {
+  background: red;
+  color: white;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin: 10px;
+  border-radius: 50%;
+}
